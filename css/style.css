@@ -58,6 +58,11 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+input:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
 button {
   padding: 10px;
   font-size: 16px;
@@ -91,7 +96,8 @@ button:hover {
 
 @media (max-width: 480px) {
   .container {
-    padding: 15px;
+    padding: 20px 15px;
+    margin-bottom: 100px;
   }
 
   .title h2 {

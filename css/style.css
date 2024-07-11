@@ -51,16 +51,32 @@ form {
   gap: 10px;
 }
 
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
 input[type="text"] {
   padding: 10px;
   font-size: 16px;
+}
+
+input[name="number"] {
+  flex: 1;
+  border-radius: 0 5px 5px 0;
   border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
 input:focus {
   outline: none;
   border-color: #28a745;
+}
+
+.keyNumber{
+  width: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-weight: bold;
 }
 
 button {

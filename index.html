@@ -18,7 +18,10 @@
     <div class="content">
       <p>Please Enter Whatsapp Number</p>
       <form>
-        <input type="text" name="number" placeholder="Enter Whatsapp Number Here...">
+        <div class="input-group">
+          <input type="text" disabled name="keyNumber" value="+20" class="keyNumber">
+          <input type="text" name="number" placeholder="Enter Whatsapp Number Here...">
+        </div>
         <button type="submit">Send Message</button>
         <div id="error-message" class="error-message"></div>
       </form>

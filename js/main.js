@@ -4,7 +4,8 @@ const errorMessage = document.querySelector('#error-message');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const number = input.value.trim(); // Trim the input value
+  let number = input.value.trim(); // Trim the input value
+  number = number.replace(/\s+/g, ''); // Remove all spaces
   const regex = /^01[0-2,5]{1}[0-9]{8}$/;
 
   // Clear previous error message
@@ -16,5 +17,3 @@ form.addEventListener('submit', (e) => {
     errorMessage.textContent = 'Please Enter a Valid Number';
   }
 });
-
-
